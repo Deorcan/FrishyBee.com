@@ -15,7 +15,7 @@
             document.body.style.backgroundImage = "url('https://deorcan.github.io/main/Spikeys_18th_birthday/Spikey2.jpg')";
             document.getElementById("Spike").style.color = "red";
 	    document.getElementById("Spike").style.fontFamily = "'Sofia', sans-serif";
-	    document.getElementById("Spike").class = "font-effect-fire";
+	    document.getElementById("Spike").classList.add("font-effect-fire");
 		
             Imagechange--;
         }
@@ -24,7 +24,8 @@
             document.body.style.backgroundImage = "url('https://deorcan.github.io/main/Spikeys_18th_birthday/Spikey1.jpg')";
             document.getElementById("Spike").style.color = "blue";
 	    document.getElementById("Spike").style.fontFamily = "Comic Sans MS";
-	    document.getElementById("Spike").class = "none";
+	    document.getElementById("Spike").classList.remove("font-effect-fire);
+							      
             Imagechange++;
         }
     }
