@@ -3,6 +3,7 @@
 <HEAD>
 	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
 	<TITLE>Spikey's 18th Birthday</TITLE>
 	</HEAD>
 	<script type="text/javascript">
@@ -13,19 +14,24 @@
         {
             document.body.style.backgroundImage = "url('https://deorcan.github.io/main/Spikeys_18th_birthday/Spikey2.jpg')";
             document.getElementById("Spike").style.color = "red";
+	    document.getElementById("Spike").style.fontFamily = "'Sofia', sans-serif";
+	    document.getElementById("Spike").class = "font-effect-fire";
+		
             Imagechange--;
         }
         else if (Imagechange == 0)
         {
             document.body.style.backgroundImage = "url('https://deorcan.github.io/main/Spikeys_18th_birthday/Spikey1.jpg')";
             document.getElementById("Spike").style.color = "blue";
+	    document.getElementById("Spike").style.fontFamily = "Comic Sans MS";
+	    document.getElementById("Spike").class = "none";
             Imagechange++;
         }
     }
 	</script>
 	<body style= "background-Image:url(https://deorcan.github.io/main/Spikeys_18th_birthday/Spikey1.jpg); background-repeat: no-repeat; background-size: 100% 100vh;">
 
-		<p id="Spike" onclick="changeImage()" style="position: absolute; top: 3.5vw; left: 85.5vw; height: 10%; width: 10%; color: black; font-family: 'Comic Sans MS'; font-size: 100%; font-weight: bold; background: transparent;">Click Me!</p>
+		<p id="Spike" onclick="changeImage()" style="position: absolute; top: 3.5vw; left: 85.5vw; height: 10%; width: 10%; color: blue; font-family: 'Comic Sans MS'; font-size: 100%; font-weight: bold; background: transparent;">Click Me!</p>
 
 	</body>
 </HEAD>
