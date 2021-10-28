@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<TITLE>Spikey's 18th Birthday</TITLE>
+	</HEAD>
+	<script type="text/javascript">
+		var Imagechange = 1;
+		function changeImage() {
+
+        if (Imagechange == 1)
+        {
+            document.body.style.backgroundImage = "url('https://thumbs.dreamstime.com/b/imagination-girl-kiss-lion-love-nature-abstract-concept-young-steals-male-wildlife-children-like-to-imagine-play-129595579.jpg')";
+            document.getElementById("Spike").style.color = "red";
+            Imagechange--;
+        }
+        else if (Imagechange == 0)
+        {
+            document.body.style.backgroundImage = "url('https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg')";
+            document.getElementById("Spike").style.color = "blue";
+            Imagechange++;
+        }
+    }
+	</script>
+	<body style= "background-Image:url(https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg); background-repeat: no-repeat; background-size: 100% 100vh;">
+
+		<p id="Spike" onclick="changeImage()" style="position: absolute; top: 3.5vw; left: 85.5vw; height: 10%; width: 10%; color: black; font-family: 'Comic Sans MS'; font-size: 100%; font-weight: bold; background: transparent;">Click Me!</p>
+
+	</body>
+</HEAD>
