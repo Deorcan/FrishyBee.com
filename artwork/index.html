@@ -16,6 +16,9 @@
 	#Pictures:hover {
 		border: solid 2px yellow;
 		}
+	#button {
+		display: none;
+	}
 	
 	.row1{
 	 top: 7.83vw;
@@ -51,112 +54,93 @@
 	 left: 86.51vw;
 	}
 	 @media only screen and (max-width: 630px) and (orientation: landscape) {
-		.lr1{
+	#Pictures {
+		border: solid 2px DimGray;
+  		justify-content: center;
+  		align-items: center;
+		padding: 1%;
+		font-size: 90%;
+		display: none;
+		}
+	#Pictures:hover {
+		border: solid 2px yellow;
+		display: none;
+		}
+		 #button {
+			 position: absolute;
+			 top: 12vh;
+			 left: 12vw;
+			 display: block;
+			 border: solid 2px black;
+			 color: black;
+			 background: snow;
+			 justify-content: center;
+  			 align-items: center;
+			 padding: 1%;
+		 }
+		 #button:hover {
+			 border: solid 2px yellow;
+		 }
+		.row1{
+		 top: 7.83vw;
+		}
+		.row2{
+		 top: 12.83vw;
+		}
+		.row3{
 	 	top: 17.83vw;
 		}
-		.lr2{
+		.row4{
+	 	top: 22.83vw;
+		}
+		.row5{
 	 	top: 27.83vw;
 		}
-		.lr3{
-	 	top: 37.83vw;
+		.row6{
+	 	top: 32.83vw;
 		}
-		.lr4{
-	 	top: 47.83vw;
+		.row7{
+	  	top: 37.83vw;
 		}
-		.lr5{
-	 	top: 57.83vw;
+		.column1{
+		 left: 12.51vw;
 		}
-		.lr6{
-	 	top: 67.83vw;
+		.column2{
+		 left: 32.51vw;
 		}
-		.lr7{
-	  	top: 77.83vw;
+		.column3{
+	 	left: 52.51vw;
 		}
-		.lr8{
-	 	top: 87.83vw;
-		}
-		.lr9{
-	 	top: 97.83vw;
-		}
-		.lr10{
-	 	top: 107.83vw;
-		}
-		.lr11{
-	 	top: 117.83vw;
-		}
-		.lr12{
-		 top: 127.83vw;
-		}
-		.lr13{
-	 	top: 137.83vw;
-		}
-		.lr14{
-		  top: 147.83vw;
-		}
-		.lc1{
-		 left: 62.51vw;
-		}
-		.lc2{
-		 left: 82.51vw;
+		.column4{
+		 left: 72.51vw;
 		}
 	}
 	
 	@media only screen and (max-width: 630px) and (orientation: portrait) {
-	        .lr1{
-	 	top: 17.83vw;
-		}
-		.lr2{
-	 	top: 27.83vw;
-		}
-		.lr3{
-	 	top: 37.83vw;
-		}
-		.lr4{
-	 	top: 47.83vw;
-		}
-		.lr5{
-	 	top: 57.83vw;
-		}
-		.lr6{
-	 	top: 67.83vw;
-		}
-		.lr7{
-	  	top: 77.83vw;
-		}
-		.lr8{
-	 	top: 87.83vw;
-		}
-		.lr9{
-	 	top: 97.83vw;
-		}
-		.lr10{
-	 	top: 107.83vw;
-		}
-		.lr11{
-	 	top: 117.83vw;
-		}
-		.lr12{
-		 top: 127.83vw;
-		}
-		.lr13{
-	 	top: 137.83vw;
-		}
-		.lr14{
-		  top: 147.83vw;
-		}
-		.lc1{
-		 left: 62.51vw;
-		}
-		.lc2{
-		 left: 82.51vw;
-		}
+	       
 	}
 
 	</style>
+<script>
+var Imagechange = 1;
+function Click(){
+	if (Imagechange == 1){
+            document.getElementById("Pictures").style.display = "block";
+	    document.getElementById("Table").style.display = "none";
+            Imagechange--;
+        }
+        else if (Imagechange == 0)
+        {
+            document.getElementById("Pictures").style.display = "none";
+	    document.getElementById("Table").style.display = "block";	      
+            Imagechange++;
+        }
+}
+</script>
 <body  background = "Lava.png"
      style="background: url(Lava.png) no-repeat middle center scroll; width: 90%; background-size: cover;">
 <p style = "text-align: center; font-size: 300%; background-color: LemonChiffon;">Artwork:</p>
-<table style = "width: 50%; margin-left: 10vw; background-color: white;">
+<table id = "Table" style = "width: 50%; margin-left: 10vw; background-color: white;">
   <tr>
   <td><a href = "content/BHQA0495.png"><p>Abstract Art.png</p></a><p>Size: 353.39KB</p></td>
   <td><a href = "content/iPhone.bmp"><p>iPhone.bmp</p></a><p>Size: 2.47MB</p></td>
@@ -228,6 +212,7 @@
 		font-family: 'Comic Sans MS', cursive; font-weight: bold; background: black;">Picture 26</p></a>
 	<a href="https://deorcan.github.io/main/3Dish%20models/space%20video%20game%20Twilight%20Moon%20Planet.bmp"><p id = "Pictures" class = "row7 column3 lr14 lc1" style="position: absolute; color: #c5000b;
 		font-family: 'Comic Sans MS', cursive; font-weight: bold; background: black;">Picture 27</p></a>
+	<p id = "button" onclick = "Click">Press me!</p>
 	</div>
 </body>
 </html>
