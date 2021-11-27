@@ -68,8 +68,8 @@
 		}
 		 #button {
 			 position: absolute;
-			 top: 30vh;
-			 left: 60vw;
+			 top: 70vh;
+			 left: 70vw;
 			 display: block;
 			 border: solid 2px black;
 			 color: black;
@@ -123,15 +123,20 @@
 	</style>
 <script>
 var Change = 1;
+var Pics = document.querySelectorAll("#Pictures");
 function Click(){
 	if (Change == 1){
-            document.getElementById("Pictures").style.display = "block";
+		for (var i = 0; i < Pics.length; i++) {
+    			Pics[i].style.display = "block";
+  		}
 	    document.getElementById("Table").style.display = "none";
             Change--;
         }
         else if (Change == 0)
         {
-            document.getElementById("Pictures").style.display = "none";
+           for (var i = 0; i < Pics.length; i++) {
+    			Pics[i].style.display = "none";
+  		}
 	    document.getElementById("Table").style.display = "block";	      
             Change++;
         }
