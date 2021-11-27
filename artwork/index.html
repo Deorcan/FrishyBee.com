@@ -64,7 +64,6 @@
 		}
 	#Pictures:hover {
 		border: solid 2px yellow;
-		display: none;
 		}
 		 #button {
 			 position: absolute;
@@ -126,17 +125,17 @@ var Change = 1;
 var Pics = document.querySelectorAll("#Pictures");
 function Click(){
 	if (Change == 1){
-		//for (var i = 0; i < Pics.length; i++) {
-    			Pics.style.display = "block";
-  		//}
+		for (var i = 0; i < Pics.length; i++) {
+    			Pics[i].style.display = "flex";
+  		}
 	    document.getElementById("Table").style.display = "none";
             Change--;
         }
         else if (Change == 0)
         {
-           //for (var i = 0; i < Pics.length; i++) {
-    			Pics.style.display = "none";
-  		//}
+           for (var i = 0; i < Pics.length; i++) {
+    			Pics[i].style.display = "none";
+  		}
 	    document.getElementById("Table").style.display = "block";	      
             Change++;
         }
