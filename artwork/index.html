@@ -68,8 +68,8 @@
 		}
 		 #button {
 			 position: absolute;
-			 top: 12vh;
-			 left: 12vw;
+			 top: 30vh;
+			 left: 60vw;
 			 display: block;
 			 border: solid 2px black;
 			 color: black;
@@ -122,18 +122,18 @@
 
 	</style>
 <script>
-var Imagechange = 1;
+var Change = 1;
 function Click(){
-	if (Imagechange == 1){
+	if (Change == 1){
             document.getElementById("Pictures").style.display = "block";
 	    document.getElementById("Table").style.display = "none";
-            Imagechange--;
+            Change--;
         }
-        else if (Imagechange == 0)
+        else if (Change == 0)
         {
             document.getElementById("Pictures").style.display = "none";
 	    document.getElementById("Table").style.display = "block";	      
-            Imagechange++;
+            Change++;
         }
 }
 </script>
@@ -212,7 +212,7 @@ function Click(){
 		font-family: 'Comic Sans MS', cursive; font-weight: bold; background: black;">Picture 26</p></a>
 	<a href="https://deorcan.github.io/main/3Dish%20models/space%20video%20game%20Twilight%20Moon%20Planet.bmp"><p id = "Pictures" class = "row7 column3 lr14 lc1" style="position: absolute; color: #c5000b;
 		font-family: 'Comic Sans MS', cursive; font-weight: bold; background: black;">Picture 27</p></a>
-	<p id = "button" onclick = "Click">Press me!</p>
+	<p id = "button" onclick = "Click()">Press me!</p>
 	</div>
 </body>
 </html>
