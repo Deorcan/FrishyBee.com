@@ -128,6 +128,7 @@ function Click(){
 		for (var i = 0; i < x.length; i++) {
     			x[i].style.display = "block";
   		}
+		x.forEach(p => {p.style.display = "block"});
 		document.getElementById("Pictures").style.color = "green";
 	    document.getElementById("Table").style.display = "none";
             Change--;
@@ -137,6 +138,7 @@ function Click(){
            for (var i = 0; i < x.length; i++) {
     			x[i].style.display = "none";
   		}
+		x.forEach(p => {p.style.display = "none"});
 		document.getElementById("Pictures").style.color = "blue";
 	    document.getElementById("Table").style.display = "block";	      
             Change++;
