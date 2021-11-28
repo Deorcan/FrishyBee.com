@@ -60,7 +60,7 @@
   		align-items: center;
 		padding: 1%;
 		font-size: 90%;
-		display: none;
+		display: block;
 		}
 	#Pictures:hover {
 		border: solid 2px yellow;
@@ -122,23 +122,22 @@
 	</style>
 <script>
 var Change = 1;
-var z =	 document.getElementById("Pictures")
 var x = document.querySelectorAll("#Pictures");
 function Click(){
 	if (Change == 1){
-		for (var i = 0; i < x.length; i++) {
-    			x[i].style.display = "block";
-  		}
-		z.style.display = "block";
+		//for (var i = 0; i < x.length; i++) {
+    			//x[i].style.display = "block";
+  		//}
+		x[1].style.color = "green";
 	    document.getElementById("Table").style.display = "none";
             Change--;
         }
         else if (Change == 0)
         {
-           for (var i = 0; i < x.length; i++) {
-    			x[i].style.display = "none";
-  		}
-		z.style.display = "none";
+           //for (var i = 0; i < x.length; i++) {
+    			//x[i].style.display = "none";
+  		//}
+		x[1].style.color = "blue";
 	    document.getElementById("Table").style.display = "block";	      
             Change++;
         }
