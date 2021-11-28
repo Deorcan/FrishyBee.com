@@ -60,7 +60,7 @@
   		align-items: center;
 		padding: 1%;
 		font-size: 90%;
-		display: none;
+		display: block;
 		}
 	#Pictures:hover {
 		border: solid 2px yellow;
@@ -126,7 +126,7 @@ var Pics = document.querySelectorAll("#Pictures");
 function Click(){
 	if (Change == 1){
 		for (var i = 0; i < Pics.length; i++) {
-    			Pics[i].style.display = "flex";
+    			Pics[i].style.display = "block";
   		}
 	    document.getElementById("Table").style.display = "none";
             Change--;
