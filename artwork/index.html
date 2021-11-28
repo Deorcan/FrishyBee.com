@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Artwork</title>
 </head>
@@ -125,18 +125,18 @@ var Change = 1;
 var x = document.querySelectorAll("#Pictures");
 function Click(){
 	if (Change == 1){
-		//for (var i = 0; i < x.length; i++) {
-    			//x[i].style.display = "block";
-  		//}
+		for (var i = 0; i < x.length; i++) {
+    			x[i].style.display = "block";
+  		}
 		document.getElementById("Pictures").style.color = "green";
 	    document.getElementById("Table").style.display = "none";
             Change--;
         }
         else if (Change == 0)
         {
-           //for (var i = 0; i < x.length; i++) {
-    			//x[i].style.display = "none";
-  		//}
+           for (var i = 0; i < x.length; i++) {
+    			x[i].style.display = "none";
+  		}
 		document.getElementById("Pictures").style.color = "blue";
 	    document.getElementById("Table").style.display = "block";	      
             Change++;
