@@ -122,12 +122,14 @@
 	</style>
 <script>
 var Change = 1;
-var x = document.querySelectorAll("p");
+var z =	 document.getElementById("Pictures")
+var x = document.querySelectorAll("#Pictures");
 function Click(){
 	if (Change == 1){
 		for (var i = 0; i < x.length; i++) {
     			x[i].style.display = "block";
   		}
+		z.style.display = "block";
 	    document.getElementById("Table").style.display = "none";
             Change--;
         }
@@ -136,6 +138,7 @@ function Click(){
            for (var i = 0; i < x.length; i++) {
     			x[i].style.display = "none";
   		}
+		z.style.display = "none";
 	    document.getElementById("Table").style.display = "block";	      
             Change++;
         }
