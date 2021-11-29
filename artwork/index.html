@@ -122,14 +122,14 @@
 	</style>
 <script>
 var Change = 1;
-var x = document.querySelectorAll(".Pictures");
+var x = document.getElementsByClassName("Pictures");
 function Click(){
 	if (Change == 1){
 		for (var i = 0; i < x.length; i++) {
     			x[i].style.display = "block";
   		}
 		x.forEach(p => {p.style.display = "block"});
-		x.style.display = "block";
+		
 		//document.getElementById("Pictures").style.color = "green";
 	    document.getElementById("Table").style.display = "none";
             Change--;
