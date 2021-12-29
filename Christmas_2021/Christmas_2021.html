@@ -113,7 +113,9 @@
   </div>
 </div>
 <script type="text/javascript">
-	
+	var C = document.getElementById("cover");
+	C.onmousemove = function() {C.style.display = 'none';};
+	C.onmouseout = function() {C.style.display = 'block';};
 </script>
 </body>
 </html>
