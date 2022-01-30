@@ -115,8 +115,7 @@
 <script type="text/javascript">
 	var C = document.getElementById("cover");
 	let Display =  window.getComputedStyle(C).getPropertyValue('display');
-	if (Display === 'block'){C.onmouseover = function() {C.style.display = 'none';};}
-	if (Display === 'none'){C.onmouseover = function() {C.style.display = 'block';};}
+	if (Display === 'block'){C.onmouseover = function() {C.style.display = 'none';};}else if (Display === 'none'){C.onmouseover = function() {C.style.display = 'block';};}
 </script>
 </body>
 </html>
